@@ -82,13 +82,13 @@ class FormationTest
         // Cas n°1 : On ajoute les 2 premiers participants à la formation
         formation.AjouterParticipant(participant1);
         formation.AjouterParticipant(participant2);
-        assertEquals(50.0,formation.TauxDePresence());
+        assertEquals(-20.099999999999994,formation.BeneficeFormation());
 
         // Cas n°2 : on ajoute le reste des participants
         formation.AjouterParticipant(participant3);
         formation.AjouterParticipant(participant4);
         formation.AjouterParticipant(participant5);
-        assertEquals(60.0,formation.TauxDePresence());
+        assertEquals(5.850000000000023,formation.BeneficeFormation());
 
 
     }

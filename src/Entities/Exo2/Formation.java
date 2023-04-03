@@ -69,6 +69,6 @@ public class Formation
     public double BeneficeFormation()
     {
         // A compléter ici
-        return  (this.GetNombreDePresents()*this.prixFormation)-this.CalculerFraisRemboursementKilometriques();
+        return  (this.GetNombreDePresents()*this.prixFormation) - this.CalculerFraisRemboursementKilometriques();
     }
 }
